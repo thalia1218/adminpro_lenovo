@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
+
 import { PAGES_ROUTES } from './pages.routes';
+
 import {FormsModule} from '@angular/forms';
+
+// ng2-charts
+import { ChartsModule } from 'ng2-charts';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -29,7 +34,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
   imports: [
     SharedModule,
     PAGES_ROUTES,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ]
 })
 
